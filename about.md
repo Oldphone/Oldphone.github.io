@@ -19,9 +19,9 @@ Strona została poświęcona tzw. klasycznym komórkom, które miały być prakt
 <ul>
 {% for item in site.data.dane %}
   <li><strong>{{ item['klucz']}}</strong>:
-  {for anotherItem in item['innyklucz']%}
+  {% for anotherItem in item['innyklucz']%}
   {{ anotherItem }}
   {% endfor %}
   </li>
-{%endfor%}
+{% endfor %}
 </ul>
