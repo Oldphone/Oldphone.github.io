@@ -1,15 +1,27 @@
 ---
 layout: page
-title: About
+title: O stronie
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## Strona poświęcona starszym modelom telefonów komórkowych
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+![Odnośnik](http://tse1.mm.bing.net/th?id=OIP.M1d3270d058398fd62d9c75cf4557d22cH0)
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+
+### ***Między cegłą, a dachówką***
+
+
+Strona została poświęcona tzw. klasycznym komórkom, które miały być praktyczne i wygodne w użyciu. Ich zakres funkcjonalności ograniczał się do dzwonienia, smsowania czy też w nowszych modelach ~~(hehe)~~ odtwarzania plików muzycznych itp...
+
+##Nagłówek
+
+<ul>
+{% for item in site.data.dane %}
+  <li><strong>{{ item['klucz']}}</strong>:
+  {for anotherItem in item['innyklucz']%}
+  {{ anotherItem }}
+  {% endfor %}
+  </li>
+{%endfor%}
+</ul>
