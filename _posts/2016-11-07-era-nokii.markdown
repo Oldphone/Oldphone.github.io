@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title:  "Era Nokii"
 permalink: /era-nokii/
 image: https://brick.pl/data/lang/pol/producers/gfx/projector/1307540216_1.jpg
